@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TerminDetail"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarTerminDetail"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/deleteTerminButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Termin löschen"
+                android:textSize="12sp"
+                android:layout_alignBaseline="@+id/titelTerminTextEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/titelTerminTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Termin Typ"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/clientLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/titelTerminTextEdit"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                >
+
+                <TextView
+                    android:id="@+id/clientText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mandant: "
+                    />
+
+                <TextView
+                    android:id="@+id/clientTextShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Client name"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/datumLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/clientLayout"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                >
+
+                <TextView
+                    android:id="@+id/datumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Datum: "
+                    />
+
+                <TextView
+                    android:id="@+id/datumTextShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Datum termin"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutUhrzeit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/datumLayout"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/uhrzeitText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uhrzeit: "
+                    />
+
+                <TextView
+                    android:id="@+id/uhrzeitextShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Uhrzeit termin"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayoutUhrzeit"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beschreibung Termin"
+                    android:textSize="17sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/linearLayoutDescription"
+                android:background="@drawable/border_style"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/descriptionTerminText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Beschreibung Termin"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

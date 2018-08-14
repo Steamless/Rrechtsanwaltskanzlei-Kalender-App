@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/optionsItem"
+        android:title="Options"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/aboutItem"
+        android:title="About"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/terminLöschenItem"
+        android:title="Termin löschen"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/terminEintragenItem"
+        android:title="Termin eintragen"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/logOutItem"
+        android:title="Logout"
+        app:showAsAction="always"/>
+
+</menu>

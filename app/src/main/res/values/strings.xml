@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">RA Kalender</string>
+
+    <string name="main_menu_title"> Main Menu </string>
+    <string name="options_title"> Optionen übersicht </string>
+    <string name="about_title"> Über die App </string>
+
+    <string name="kalender"> Kalender übersicht </string>
+    <string name="workers"> Mitarbeiter übersicht </string>
+
+    <string name="termin_löschen"> Termin löschen </string>
+    <string name="termin_eintragen"> Termin eintragen </string>
+    <string name="termin_typ_auswahl"> Termintyp auswählen </string>
+
+    <string name="datum_auswahl"> Datum auswählen </string>
+
+    <string name="welcome">Willkomen&#160;</string>
+    <string name="aboutApp">Diese App wurde von Robin Schwotzer und Jimmy Franke entwickelt für das Profilierungsmodul Mobile Applikationen an der Hochschule für Telekommunikation Leipzig in Sommersemester 2018. Aufgabe der Applikation besteht in der Pflege und Verwaltung der Stammdaten sowie der Entwicklung eines Kalenders. Dieser soll zukünftig anstehende Termine kategorisieren, um die Geschäftsprozesse der Rechtsanwaltskanzlei zu unterstützen. Hierzu gehört das einpflegen von neuen Terminen, das bearbeiten bereits vorhandener Termine sowie das löschen der Termine. Darüber hinaus ist wichtig zu erwähnen, dass die mobile Applikation Informationen bezüglich mitwirkender Mitarbeiter beinhaltet.
+Das Resultat dieser Arbeit ist eine mobile Applikation, welche mit einer relationalen Datenbank über verschiedene Schnittstelle verbunden ist und Termine kategorisiert im Kalender einpflegt, sowie Termine für verschiedene Mandanten verwaltet. </string>
+
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.robin.rakalender.TerminEintragen"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarTerminEintragen"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/speichernButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:text="Speichern" />
+
+
+            <LinearLayout
+                android:id="@+id/clientLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/titelTerminTextEdit"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Client: "
+                    />
+
+
+                <Spinner
+                    android:id="@+id/clientDropdown"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/terminTyptLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/clientLayout"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Termin typ: "
+                    />
+
+
+                <Spinner
+                    android:id="@+id/terminTypDropdown"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/datumLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/terminTyptLayout"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                >
+
+                <TextView
+                    android:id="@+id/datumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Datum: "
+                    />
+
+                <EditText
+                    android:id="@+id/datumTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginStart="50dp"
+                    android:hint="Datum eingeben"
+                    android:inputType="date" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutUhrzeit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/datumLayout"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/UhrzeitText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uhrzeit anfang: "
+                    />
+
+                <EditText
+                    android:id="@+id/uhrzeitTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginStart="50dp"
+                    android:hint="Uhrzeit eingeben"
+                    android:inputType="date" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayoutUhrzeit"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beschreibung Termin"
+                    android:textSize="17sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/linearLayoutDescription"
+                android:background="@drawable/border_style"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/editTextDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Beschreibung Termin"
+                    android:ems="10"
+                    android:inputType="text"
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

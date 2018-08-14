@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.robin.rakalender">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".KalenderApp"
+        android:allowBackup="true"
+        android:icon="@drawable/iconappkalender"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconappkalender"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainMenu"
+            android:label="Main Menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Kalender"
+            android:label="@string/kalender"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Kontakten"
+            android:label="@string/workers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TerminEintragen"
+            android:label="@string/termin_eintragen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Options"
+            android:label="@string/options_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About"
+            android:label="@string/about_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TerminDetail"
+            android:label="Termin Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowClientsActivity"
+            android:label="Mandanten übersicht"
+            android:screenOrientation="portrait" >
+
+        </activity>
+    </application>
+
+</manifest>

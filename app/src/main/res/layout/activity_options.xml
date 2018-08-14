@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Options"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarOptions"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/optionsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bitte benutzername sowie das alte und neue password eingeben "
+            android:textSize="20dp"
+            android:paddingBottom="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/border_style">
+
+            <EditText
+                android:id="@+id/usernameTextOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Username"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:id="@+id/oldPasswordTextOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Old password"
+                android:paddingTop="30dp"
+                />
+
+            <EditText
+                android:id="@+id/neuPasswordTextOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="New password"
+                android:paddingTop="30dp"/>
+
+            <EditText
+                android:id="@+id/wiederNeuPasswordTextOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="New password again"
+                android:paddingTop="30dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/optionsSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Änderung speichern"
+            android:layout_marginTop="30sp"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+</LinearLayout>
